@@ -1,0 +1,22 @@
+{
+  "name": "SZFoundation",
+  "version": "0.1.0",
+  "summary": "A short description of SZFoundation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jiuaim/SZFoundation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jiuaim": "jiuaim@163.com"
+  },
+  "source": {
+    "git": "https://github.com/jiuaim/SZFoundation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SZFoundation/Classes/**/*"
+}
