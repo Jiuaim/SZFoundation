@@ -9,6 +9,7 @@
 #ifndef SZFoundationHeader_h
 #define SZFoundationHeader_h
 
-#import "HeaderFile.h"
+#import "ShortCutMacro.h"
+#import "NSString+Tools.h"
 
 #endif /* SZFoundationHeader_h */
