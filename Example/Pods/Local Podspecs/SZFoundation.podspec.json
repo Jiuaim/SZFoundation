@@ -1,7 +1,7 @@
 {
   "name": "SZFoundation",
-  "version": "0.1.0",
-  "summary": "A short description of SZFoundation.",
+  "version": "0.1.2",
+  "summary": "My foundation kit!",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jiuaim/SZFoundation",
   "license": {
@@ -13,10 +13,18 @@
   },
   "source": {
     "git": "https://github.com/jiuaim/SZFoundation.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SZFoundation/Classes/**/*"
+  "source_files": "SZFoundation/Classes/**/*",
+  "dependencies": {
+    "BlocksKit": [
+      "~> 2.2.5"
+    ],
+    "Aspects": [
+      "~> 1.4.1"
+    ]
+  }
 }

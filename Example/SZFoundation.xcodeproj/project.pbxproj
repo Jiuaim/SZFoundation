@@ -39,9 +39,9 @@
 /* Begin PBXFileReference section */
 		0506E6A15E0358A2F4B1290A /* Pods-SZFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZFoundation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZFoundation_Example/Pods-SZFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1487E301C6812C558C9C93BC /* Pods_SZFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F27281851347ADE4BF72BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		28F27281851347ADE4BF72BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2A5A6FFD157EA62E80BD0F7B /* Pods-SZFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZFoundation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZFoundation_Tests/Pods-SZFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		330DF90B212E3F67DCE16F97 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		330DF90B212E3F67DCE16F97 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45EA462AE3CC6D1773F233E4 /* Pods_SZFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D067BB653C58698B7D91814 /* Pods-SZFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZFoundation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZFoundation_Tests/Pods-SZFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SZFoundation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZFoundation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76E3507BA6176281CE8F8B9A /* SZFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SZFoundation.podspec; path = ../SZFoundation.podspec; sourceTree = "<group>"; };
+		76E3507BA6176281CE8F8B9A /* SZFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SZFoundation.podspec; path = ../SZFoundation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB539D0A18059A6E2B82EB8C /* Pods-SZFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZFoundation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZFoundation_Example/Pods-SZFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,10 +302,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SZFoundation_Example/Pods-SZFoundation_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SZFoundation/SZFoundation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SZFoundation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

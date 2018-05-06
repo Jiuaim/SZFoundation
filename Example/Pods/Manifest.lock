@@ -1,10 +1,28 @@
 PODS:
+  - Aspects (1.4.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SZFoundation (0.1.0)
+  - SZFoundation (0.1.2):
+    - Aspects (~> 1.4.1)
+    - BlocksKit (~> 2.2.5)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -12,6 +30,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Aspects
+    - BlocksKit
     - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
@@ -19,8 +39,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SZFoundation: 3f3c4bf07c8070f2e466715e518e82e0687aa1a6
+  SZFoundation: b6a252d891c18aa6c2316fcb42e6115cd992baff
 
 PODFILE CHECKSUM: e359e6047d6099dae6e3cb762123ab82f91518da
 

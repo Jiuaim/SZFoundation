@@ -11,5 +11,7 @@
 
 #import "ShortCutMacro.h"
 #import "NSString+Tools.h"
+#import "BlocksKit.h"
+#import "Aspects.h"
 
 #endif /* SZFoundationHeader_h */
